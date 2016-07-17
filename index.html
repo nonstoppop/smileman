@@ -1,7 +1,127 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hi Jack</h1>
-<p>Let's do this</p>
-</body>
+
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+    <meta charset="UTF-8">
+    <title>Smile Man</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    <link rel="stylesheet" href="css/reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Miss+Fajardose|Princess+Sofia|Rock+Salt|Permanent+Marker" rel="stylesheet">
+        	<link rel="stylesheet" href="css/style.css">
+        	<link rel="stylesheet" type="text/css" href="css/csshake-slow.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+  
+
+      
+      
+      <div id="pictures" class="bss-slides demo1" tabindex="2" autofocus="autofocus" style="background: #000 ">
+            <!--<figure>
+		    	<img style="z-index: 4; width: 100vw;" src="images/-1.png" /><figcaption style="font-family: 'Miss Fajardose'; font-size: 20vw; line-height: 90%; top: 0%; padding-top: .08em; padding-right: .05em">“ Play The Music God Dammit! ”</figcaption> 		
+            </figure>-->
+            <figure id="wakeUp">
+              
+		     	<img src="images/-1.png" class="bss-nextpic-neg-1"/> <!--<figcaption> <a class="shake-little shake-constant">“ Play The Music God Damnit! ”</a></figcaption>-->
+            </figure>
+            
+            <figure id="peopleSkills">
+            
+		    	<img src="images/0.png" class="bss-nextpic-0"/> <!--<figcaption>People Skills</figcaption>-->
+            </figure>
+            
+            <figure id="lifeSlices">
+            
+		     	<img src="images/1.png" class="bss-nextpic-1"/> <!--<figcaption>Life Slices</figcaption>-->
+            </figure>
+            
+            <figure id="blooper">
+              
+		     	<img src="images/2.png" class="bss-nextpic-2" /> <!--<figcaption>Blooper</figcaption>-->
+            </figure>
+            
+            <figure id="simpson">
+              
+		     	<img src="images/3.png" class="bss-nextpic-3"/> <!--<figcaption>Simpson</figcaption>-->
+            </figure>
+            
+            <figure id="onTheLip">
+              
+		     	<img src="images/4.png" class="bss-nextpic-4"/> <!--<figcaption>On The Lip</figcaption>-->
+            </figure>
+            
+            <figure id="holdMe">
+              	<img style="z-index: 1" src="images/5.png" class="bss-nextpic-5"/> <!--<figcaption>Hold Me Squeeze Me</figcaption>-->
+
+		     	
+            </figure>
+            <figure id="cant">
+              
+		     	<div style="height:100vh; -webkit-transform:translate(37%,-10%); "><img  src="images/6.png" class="bss-nextpic-6 shake-little shake-constant"/></div> <!--<figcaption style="z-index: -100" >Can't</figcaption>-->
+            </figure>
+            <figure id="evenThough">
+              
+		     	<img src="images/7.png" class="bss-nextpic-7"/> <!--<figcaption>Even Though We Are Birds</figcaption>-->
+            </figure>
+            <figure id="smileMan">
+              
+		     	<img src="images/8.png" class="bss-nextpic-8"/> <figcaption><a href= "https://absrdst.bandcamp.com/" style= "text-decoration: none" target="_blank">Smile Man</a></figcaption>
+            </figure>
+
+        </div>
+        
+        
+        <audio id="bvplayer" onended="showCurrent(1)"></audio>
+         <!-- // bss-slides -->
+<script src="js/hammer.min.js"></script><!-- for swipe support on touch interfaces -->
+
+	<iframe id="sc-widget" style="position:fixed;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/219367418%3Fsecret_token%3Ds-eM6uN&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%" height="0" scrolling="no" frameborder="no"></iframe>
+	<script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	var thisisthecount = 0;
+ 	 (function(){
+    var widgetIframe = document.getElementById('sc-widget'),
+        widget       = SC.Widget(widgetIframe);
+	widget.play();
+    widget.bind(SC.Widget.Events.READY, function() {
+      widget.bind(SC.Widget.Events.PLAY, function() {
+        // get information about currently playing sound
+        widget.getCurrentSound(function(currentSound) {
+         /* console.log('sound ' + currentSound.get('') + 'began to play');*/
+        });
+      });
+      widget.setVolume(100);
+      // get current level of volume
+      widget.getVolume(function(volume) {
+        console.log('current volume value is ' + volume);
+      });
+      // set new volume level
+      widget.setVolume(100);
+      
+      // get the value of the current position
+     
+    });
+
+  }());
+</script> 
+    
+        <script src="js/index.js"></script>
+        <script src="js/api.js"></script>
+
+<div style="text-align:center;border:1px solid red">
+This is some text in a div element!
+</div>
+
+    
+    
+    
+  </body>
+  
 </html>
