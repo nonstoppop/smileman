@@ -3,7 +3,7 @@
 	position: relative;
     height: 100%;
     display: block;
-    position: fixed;
+    position: absolute;
   	top: 0;
  	width: 100%;
   	height: 100vh;
@@ -28,14 +28,14 @@ body{
 
 }
 .bss-slides figure{
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 100vh;
 }
 .bss-slides figure:first-child{
   background: #000;
-  position: fixed;
+  position: absolute;
 
 }
 .bss-slides figure img{
@@ -50,7 +50,7 @@ body{
   -webkit-transition: opacity 0s;
   transition: opacity 0s;
   /*display: block;*/
-  position: fixed;
+  position: absolute;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
@@ -73,7 +73,7 @@ body{
 }
 
 .bss-slides figcaption{
-  position: fixed;
+  position: absolute;
   text-align: center;
   width: 100vw;
   font-family: 'Permanent Marker';
@@ -134,7 +134,7 @@ body{
 .bss-next{
   opacity: 0;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   right: 0;
   padding: 55vh 0% 55vh 0%;
   /*border-top-left-radius: 3px;*/
@@ -143,7 +143,7 @@ body{
 .bss-prev{
   opacity:0;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   left: 0;
   padding: 55vh 3% 55vh 3%;
 }
